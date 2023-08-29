@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <%- include('./layout/meta'); -%>
+
+<head>
+  <%- include('./layout/meta'); -%>
     <title>測試頁</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+</head>
 
-    <h1 class="index-title fs-1 feature-font-family" style="height: 100vh">Test</h1>
-    
-    <img data-aos="fade-up" src="../assets/images/karina_square2.png" style="width: 300px;" alt="ai">
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="py-14">
+      <div class="container py-8">
+        <h2 class="mb-4 border-bottom border-1 fs-2">Typography</h2>
+        <ul>
+          <li class="fs-1">思源黑體 Noto sans cjk tc</li>
+          <li class="fs-2">思源黑體 Noto sans cjk tc</li>
+          <li class="fs-3">思源黑體 Noto sans cjk tc</li>
+          <li class="fs-4">思源黑體 Noto sans cjk tc</li>
+          <li class="fs-5">思源黑體 Noto sans cjk tc</li>
+          <li class="fs-6">思源黑體 Noto sans cjk tc</li>
+        </ul>
+        <ul>
+          <li class="fs-1 feature-font-family text-primary">Shrikhand</li>
+          <li class="fs-3 feature-font-family">Shrikhand</li>
+        </ul>
+      </div>
 
+      <div class="bg-black">
+        <div class="container py-8">
+          <h2 class="mb-4 border-bottom border-1 fs-2 text-white">Components</h2>
+          <div class="mb-3 d-flex gap-3">
+            <button class="btn btn-main feature-font-family">Diane</button>
+            <button class="btn btn-main feature-font-family">Felix</button>
+            <button class="btn btn-main feature-font-family">Karina</button>
+            <button class="btn btn-main feature-font-family">Vito</button>
+          </div>
+          <div class="d-flex gap-3">
+            <button class="btn btn-main feature-font-family active">Diane</button>
+            <button class="btn btn-main feature-font-family active">Felix</button>
+            <button class="btn btn-main feature-font-family active">Karina</button>
+            <button class="btn btn-main feature-font-family active">Vito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-8">
+        <h2 class="mb-4 border-bottom border-1 fs-2">AOS</h2>
+        <img data-aos="fade-up" src="../assets/images/karina_square2.png" style="width: 300px;" alt="ai">
+      </div>
+    </div>
     <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
+</body>
 
-    <script type="module" src="../main.js"></script>
-  </body>
 </html>

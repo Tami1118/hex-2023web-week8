@@ -10,10 +10,24 @@ $alphabox-primary-400: #6E01F8;
 
 
 $colors: (
-  "ap-900": $alphabox-primary-900,
-  "ap-800": $alphabox-primary-800,
-  "ap-600": $alphabox-primary-600,
-  "ap-400": $alphabox-primary-400,
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "black":      $black,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800,
+  "ap-900":     $alphabox-primary-900,
+  "ap-800":     $alphabox-primary-800,
+  "ap-600":     $alphabox-primary-600,
+  "ap-400":     $alphabox-primary-400,
 );
 
 
@@ -22,12 +36,20 @@ $secondary: $alphabox-secondary;
 
 
 $theme-colors: (
-  "primary": $alphabox-primary,
-  "secondary": $alphabox-secondary,
-  "ap-900": $alphabox-primary-900,
-  "ap-800": $alphabox-primary-800,
-  "ap-600": $alphabox-primary-600,
-  "ap-400": $alphabox-primary-400,
+  "primary":    $alphabox-primary,
+  "secondary":  $alphabox-secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "white":      $white,
+  "black":      $black,
+  "ap-900":     $alphabox-primary-900,
+  "ap-800":     $alphabox-primary-800,
+  "ap-600":     $alphabox-primary-600,
+  "ap-400":     $alphabox-primary-400,
 );
 
 
@@ -91,3 +113,11 @@ $font-sizes: (
 
 // border-radius
 $border-radius: 40px;
+
+
+// navbar
+$navbar-light-color: white;
+$navbar-light-hover-color: white;
+$navbar-light-active-color: white;
+$navbar-light-disabled-color: $gray-300;
+$navbar-light-icon-color: white;

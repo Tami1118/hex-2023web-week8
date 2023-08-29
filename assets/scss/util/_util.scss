@@ -1,7 +1,8 @@
 
 $utilities: ();
 $utilities: map-merge(
-  ("font-weight": (
+  (
+    "font-weight": (
     property: font-weight,
     class: fw,
     values: (
@@ -28,6 +29,7 @@ $utilities: map-merge(
     ),
     "text-align": (
       responsive: true,
+      
       property: text-align,
       class: text,
       values: (
@@ -36,6 +38,33 @@ $utilities: map-merge(
         center: center,
         justify: justify,
       )
+    ),
+    "position": (
+      responsive: true,
+      property: position,
+      values: static relative absolute fixed sticky
+    ),
+    "top": (
+      responsive: true,
+      property: top,
+      values: $position-values
+    ),
+    "bottom": (
+      responsive: true,
+      property: bottom,
+      values: $position-values
+    ),
+    "start": (
+      responsive: true,
+      property: left,
+      class: start,
+      values: $position-values
+    ),
+    "end": (
+      responsive: true,
+      property: right,
+      class: end,
+      values: $position-values
     ),
   ),
   $utilities
