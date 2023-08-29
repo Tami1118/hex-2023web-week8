@@ -1,0 +1,59 @@
+// font-family
+.base-font-family {
+  font-family: $font-family-sans-serif;
+}
+
+.feature-font-family {
+  font-family: "Shrikhand", cursive;
+}
+
+// font-size
+$media-breakpoint-main: lg;
+
+.fs-1 {
+  font-size: 40px !important;
+
+  @include media-breakpoint-up($media-breakpoint-main) {
+    font-size: $h1-font-size !important;
+  }
+}
+
+.fs-2 {
+  font-size: 40px !important;
+
+  @include media-breakpoint-up($media-breakpoint-main) {
+    font-size: $h2-font-size !important;
+  }
+}
+
+.fs-3 {
+  font-size: 24px !important;
+
+  @include media-breakpoint-up($media-breakpoint-main) {
+    font-size: $h3-font-size !important;
+  }
+}
+
+.fs-sm {
+  font-size: $h1-font-size !important;
+
+  @include media-breakpoint-up($media-breakpoint-main) {
+    font-size: $font-size-sm !important;
+  }
+}
+
+.fs-md {
+  font-size: $font-size-sm !important;
+
+  @include media-breakpoint-up($media-breakpoint-main) {
+    font-size: $font-size-md !important;
+  }
+}
+
+.fs-lg {
+  font-size: $font-size-md !important;
+
+  @include media-breakpoint-up($media-breakpoint-main) {
+    font-size: $font-size-lg !important;
+  }
+}

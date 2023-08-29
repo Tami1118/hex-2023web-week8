@@ -1,0 +1,93 @@
+$enable-rfs: true;
+
+// color
+$alphabox-primary: #7000FF;
+$alphabox-secondary: #E9E2F3;
+$alphabox-primary-900: #11002D;
+$alphabox-primary-800: #1F0F39;
+$alphabox-primary-600: #380C7E;
+$alphabox-primary-400: #6E01F8;
+
+
+$colors: (
+  "ap-900": $alphabox-primary-900,
+  "ap-800": $alphabox-primary-800,
+  "ap-600": $alphabox-primary-600,
+  "ap-400": $alphabox-primary-400,
+);
+
+
+$primary: $alphabox-primary;
+$secondary: $alphabox-secondary;
+
+
+$theme-colors: (
+  "primary": $alphabox-primary,
+  "secondary": $alphabox-secondary,
+  "ap-900": $alphabox-primary-900,
+  "ap-800": $alphabox-primary-800,
+  "ap-600": $alphabox-primary-600,
+  "ap-400": $alphabox-primary-400,
+);
+
+
+// spacer
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  h: $spacer * .125,   // 2px
+  1: $spacer * .25,    // 4px
+  2: $spacer * .5,     // 8px
+  3: $spacer * .75,    // 12px
+  4: $spacer * 1,      // 16px
+  4h: $spacer * 1.125, // 18px
+  5: $spacer * 1.25,   // 20px
+  6: $spacer * 1.5,    // 24px
+  7: $spacer * 1.75,   // 28px
+  8: $spacer * 2,      // 32px
+  9: $spacer * 2.25,   // 36px
+  10: $spacer * 2.5,   // 40px
+  11: $spacer * 2.75,  // 44px
+  12: $spacer * 3,     // 48px
+  13: $spacer * 3.25,  // 52px
+  14: $spacer * 3.5,   // 56px
+  15: $spacer * 3.75,  // 60px
+  16: $spacer * 4,     // 64px
+  18: $spacer * 4.5,     // 64px
+  20: $spacer * 5,     // 64px
+  24: $spacer * 6,     // 80px
+  32: $spacer * 8,     // 80px
+);
+
+
+// font-family
+$font-family-sans-serif:      "Noto Sans TC", sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+// font-size
+$font-size-base: 1rem;
+$font-size-lg:   $font-size-base * 25;   // 400px
+$font-size-md:   $font-size-base * 8;    // 128px
+$font-size-sm:   $font-size-base * 6;    // 96px
+$h1-font-size:   $font-size-base * 4;    // 64px
+$h2-font-size:   $font-size-base * 3;    // 48px
+$h3-font-size:   $font-size-base * 2;    // 32px
+$h4-font-size:   $font-size-base * 1.25; // 20px
+$h5-font-size:   $font-size-base;        // 16px
+$h6-font-size:   $font-size-base * .875; // 14px
+
+$font-sizes: (
+  lg: $font-size-lg,
+  md: $font-size-md,
+  sm: $font-size-sm,
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+);
+
+
+// border-radius
+$border-radius: 40px;
