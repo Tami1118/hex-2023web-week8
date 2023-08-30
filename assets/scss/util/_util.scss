@@ -94,23 +94,28 @@ $utilities: map-merge(
     // scss-docs-end utils-focus-ring
     // scss-docs-start utils-position
     "position": (
+      responsive: true, // *custom
       property: position,
       values: static relative absolute fixed sticky
     ),
     "top": (
+      responsive: true, // *custom
       property: top,
       values: $position-values
     ),
     "bottom": (
+      responsive: true, // *custom
       property: bottom,
       values: $position-values
     ),
     "start": (
+      responsive: true, // *custom
       property: left,
       class: start,
       values: $position-values
     ),
     "end": (
+      responsive: true, // *custom
       property: right,
       class: end,
       values: $position-values
@@ -703,7 +708,7 @@ $utilities: map-merge(
       values: (
         gradient: var(--#{$prefix}gradient),
         radial: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, rgba(0, 0, 0, 0.00) 100%),
-        linear: linear-gradient(180deg, #7000FF 0%, rgba(17, 0, 45, 0.00) 100%),
+        linear: linear-gradient(180deg, #7000FF 0%, #11002D 100%), // *custom
       )
     ),
     // scss-docs-start utils-interaction
