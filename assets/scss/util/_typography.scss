@@ -7,53 +7,69 @@
   font-family: "Shrikhand", cursive;
 }
 
+.saira-font-family{
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+
 // font-size
 $media-breakpoint-main: lg;
 
 .fs-1 {
-  font-size: $h1-font-size !important;
+  font-size: 40px !important;
   
-  @include media-breakpoint-down($media-breakpoint-main) {
-    font-size: 40px !important;
-  }
-}
-
-.fs-2 {
-  font-size: $h2-font-size !important;
-  
-  @include media-breakpoint-down($media-breakpoint-main) {
-    font-size: 40px !important;
-  }
-}
-
-.fs-3 {
-  font-size: $h3-font-size !important;
-  
-  @include media-breakpoint-down($media-breakpoint-main) {
-    font-size: 24px !important;
-  }
-}
-
-.fs-sm {
-  font-size: $sm-font-size !important;
-  
-  @include media-breakpoint-down($media-breakpoint-main) {
+  @include media-breakpoint-up(lg) {
     font-size: $h1-font-size !important;
   }
 }
 
-.fs-md {
-  font-size: $md-font-size !important;
+.fs-2 {
+  font-size: 40px !important;
   
-  @include media-breakpoint-down($media-breakpoint-main) {
+  @include media-breakpoint-up(lg) {
+    font-size: $h2-font-size !important;
+  }
+}
+
+.fs-3 {
+  font-size: 24px !important;
+  
+  @include media-breakpoint-up(lg) {
+    font-size: $h3-font-size !important;
+  }
+}
+
+.fs-sm {
+  font-size: $h1-font-size !important;
+  
+  @include media-breakpoint-up(lg) {
     font-size: $sm-font-size !important;
   }
 }
 
-.fs-lg {
-  font-size: $lg-font-size !important;
+.fs-md {
+  font-size: $sm-font-size !important;
   
-  @include media-breakpoint-down($media-breakpoint-main) {
-    font-size: $sm-font-size !important;
+  @include media-breakpoint-up(lg) {
+    font-size: $md-font-size !important;
+  }
+}
+
+.fs-lg {
+  font-size: $sm-font-size !important;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 224px !important;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 160px !important;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 224px !important;
+  }
+  
+  @include media-breakpoint-up(xxxl) {
+    font-size: $lg-font-size !important;
   }
 }

@@ -399,8 +399,8 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
-// $enable-rfs:                  false;// *custom
+// $enable-rfs:                  true !default;
+$enable-rfs:                  false;// *custom
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -450,10 +450,12 @@ $spacers: (
   14: $spacer * 3.5,   // 56px
   15: $spacer * 3.75,  // 60px
   16: $spacer * 4,     // 64px
-  18: $spacer * 4.5,     // 64px
-  20: $spacer * 5,     // 64px
-  24: $spacer * 6,     // 80px
-  32: $spacer * 8,     // 80px
+  17: $spacer * 4.25,  // 68px
+  19: $spacer * 4.75,  // 76px
+  20: $spacer * 5,     // 80px
+  24: $spacer * 6,     // 96px
+  32: $spacer * 8,     // 128px
+  36: $spacer * 9,     // 144px
 ); // *custom
 // scss-docs-end spacer-variables-maps
 
@@ -465,7 +467,8 @@ $spacers: (
 $position-values: (
   0: 0,
   50: 50%,
-  100: 100%
+  75: 75%,
+  100: 100%,
 ) !default;
 // scss-docs-end position-map
 
@@ -526,8 +529,9 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
-) !default;
+  xxl: 1400px,
+  xxxl: 1700px,
+);// *custom
 // scss-docs-end grid-breakpoints
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -671,13 +675,13 @@ $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
 
-$h1-font-size:                $font-size-base * 4;    // 64
-$h2-font-size:                $font-size-base * 3;    // 48
-$h3-font-size:                $font-size-base * 2;    // 32
-$h4-font-size:                $font-size-base * 1.5;  // 24
-$h5-font-size:                $font-size-base * 1.25; // 20
-$h6-font-size:                $font-size-base;        // 16
-$c1-font-size:                $font-size-base * .875; // 14
+$h1-font-size:                $font-size-base * 4;    // 64 -> 40
+$h2-font-size:                $font-size-base * 3;    // 48 -> 40
+$h3-font-size:                $font-size-base * 2;    // 32 -> 24
+$h4-font-size:                $font-size-base * 1.5;  // 24 -> 20
+$h5-font-size:                $font-size-base * 1.25; // 20 -> 20
+$h6-font-size:                $font-size-base;        // 16 -> 16
+$c1-font-size:                $font-size-base * .875; // 14 -> 14
 $sm-font-size:                $font-size-base * 6;    // 96
 $md-font-size:                $font-size-base * 8;    // 128
 $lg-font-size:                $font-size-base * 25;   // 400
@@ -955,12 +959,15 @@ $input-disabled-color:                  null !default;
 $input-disabled-bg:                     var(--#{$prefix}secondary-bg) !default;
 $input-disabled-border-color:           null !default;
 
-$input-color:                           var(--#{$prefix}body-color) !default;
+// $input-color:                           var(--#{$prefix}body-color) !default;
+$input-color:                           
+$black;
 $input-border-color:                    var(--#{$prefix}border-color) !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
-$input-border-radius:                   var(--#{$prefix}border-radius) !default;
+// $input-border-radius:                   var(--#{$prefix}border-radius) !default;
+$input-border-radius:                   0;
 $input-border-radius-sm:                var(--#{$prefix}border-radius-sm) !default;
 $input-border-radius-lg:                var(--#{$prefix}border-radius-lg) !default;
 
@@ -1265,7 +1272,7 @@ $navbar-toggler-border-radius:      0;
 $navbar-toggler-focus-width:        none; // *custom
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 
-$navbar-light-color:                rgba(var(--#{$prefix}emphasis-color-rgb), .65) !default;
+// $navbar-light-color:                rgba(var(--#{$prefix}emphasis-color-rgb), .65) !default;
 $navbar-light-color:                white; // *custom
 // $navbar-light-hover-color:          rgba(var(--#{$prefix}emphasis-color-rgb), .8) !default;
 $navbar-light-hover-color:          white; // *custom

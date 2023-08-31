@@ -132,6 +132,7 @@ $utilities: map-merge(
     // scss-docs-end utils-position
     // scss-docs-start utils-borders
     "border": (
+      responsive: true, // *custom
       property: border,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -139,6 +140,7 @@ $utilities: map-merge(
       )
     ),
     "border-top": (
+      responsive: true, // *custom
       property: border-top,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -146,6 +148,7 @@ $utilities: map-merge(
       )
     ),
     "border-end": (
+      responsive: true, // *custom
       property: border-right,
       class: border-end,
       values: (
@@ -154,6 +157,7 @@ $utilities: map-merge(
       )
     ),
     "border-bottom": (
+      responsive: true, // *custom
       property: border-bottom,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -161,6 +165,7 @@ $utilities: map-merge(
       )
     ),
     "border-start": (
+      responsive: true, // *custom
       property: border-left,
       class: border-start,
       values: (
@@ -214,7 +219,10 @@ $utilities: map-merge(
     "max-width": (
       property: max-width,
       class: mw,
-      values: (100: 100%)
+      values: (
+        100: 100%,
+        1760: 1760px, // *custom
+      )
     ),
     "viewport-width": (
       property: width,
@@ -531,11 +539,15 @@ $utilities: map-merge(
         semibold: $font-weight-semibold,
         bold: $font-weight-bold,
         bolder: $font-weight-bolder,
+        100: 100,
+        200: 200,
         300: 300,
         400: 400,
         500: 500,
         600: 600,
         700: 700, // *custom
+        800: 800, // *custom
+        900: 900, // *custom
       )
     ),
     "line-height": (
@@ -707,7 +719,8 @@ $utilities: map-merge(
       class: bg,
       values: (
         gradient: var(--#{$prefix}gradient),
-        radial: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, rgba(0, 0, 0, 0.00) 100%),
+        radial: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, #000 100%),
+        radialToLight: radial-gradient(50% 50.00% at 50% 50.00%, #000 0%, #28085C 100%),
         linear: linear-gradient(180deg, #7000FF 0%, #11002D 100%), // *custom
       )
     ),
@@ -814,7 +827,28 @@ $utilities: map-merge(
       property: z-index,
       class: z,
       values: $zindex-levels,
-    )
+    ),
+    "letter-spacing": ( // *custom
+      responsive: true,
+      property: letter-spacing,
+      class: ls,
+      values: (
+        10: 10px,
+        16: 16px,
+        20: 20px,
+        40: 40px,
+        48: 48px,
+      )
+    ),
+    "text-indent": ( // *custom
+      responsive: true,
+      property: text-indent,
+      class: lt,
+      values: (
+        28: 28px,
+        30: 30px,
+      )
+    ),
     // scss-docs-end utils-zindex
   ),
   $utilities
