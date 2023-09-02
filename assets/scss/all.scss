@@ -7,12 +7,12 @@
 
 
 // 2. Include remainder of required Bootstrap stylesheets (including any separate color 
-@import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/variables";
+@import "../scss/util/variables";
 @import "../../node_modules/bootstrap/scss/variables-dark";
 
 
 // 3. Include any default variable overrides here
-@import "../scss/util/variables";
 
 
 // 4. Include any default map overrides here
@@ -23,7 +23,7 @@
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../scss/util/util";
-@import "../../node_modules/bootstrap/scss/utilities";
+// @import "../../node_modules/bootstrap/scss/utilities";
 @import "../../node_modules/bootstrap/scss/root";
 @import "../../node_modules/bootstrap/scss/reboot"; // with type
 
@@ -54,7 +54,7 @@
 @import "../../node_modules/bootstrap/scss/modal";
 // @import "../../node_modules/bootstrap/scss/tooltip"; //
 // @import "../../node_modules/bootstrap/scss/popover"; //
-// @import "../../node_modules/bootstrap/scss/carousel"; //
+@import "../../node_modules/bootstrap/scss/carousel"; //
 // @import "../../node_modules/bootstrap/scss/spinners"; //
 @import "../../node_modules/bootstrap/scss/offcanvas"; //
 @import "../../node_modules/bootstrap/scss/placeholders";
@@ -80,3 +80,5 @@
 @import "../scss/components/pagination";
 
 @import "../scss/pages/index";
+@import "./components/decoration";
+@import "./components/accordion-button-icon";
