@@ -3,15 +3,44 @@
 
 <head>
   <%- include('./layout/meta'); -%>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <title>ALPHABOX+｜常見問題</title>
 </head>
 
 <body>
   <%- include('./layout/header'); -%>
 
-    <div class="pt-17">
-
-      <!-- 直接編輯 -->｀
+    <div class="bg-secondary pt-17 pb-32">
+      <div class="container">
+        <h1 class="py-16 border-dotted fw-900 ls-40 ls-lg-48 mb-8 mb-lg-10">FAQ</h1>
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group">
+              <a href="#" class="list-group-item p-0 mb-4 list-group-item-action text-ap-800" aria-current="true">
+                ALPHABOX+ 使用問題
+              </a>
+              <a href="#" class="list-group-item p-0 mb-4 list-group-item-action text-ap-800">訂購與運送</a>
+              <a href="#" class="list-group-item p-0 mb-4 list-group-item-action text-ap-800">產品保養與維修</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item border-dotted pb-10 bg-secondary">
+                <h2 class="accordion-header">
+                  <button class="accordion-button bg-secondary p-0 text-ap-800" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ALPHABOX+ 的使用方式是什麼？
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body p-0 bg-secondary pt-4 text-ap-800">
+                    首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
 
