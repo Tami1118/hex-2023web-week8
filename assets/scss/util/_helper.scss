@@ -2,15 +2,36 @@
   outline: 1px solid red;
 }
 
+.or-line::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  height: 1px;
+  width: 46%;
+  background-color: gray;
+}
+
+.or-line::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  height: 1px;
+  width: 46%;
+  background-color: gray;
+}
+
 .btn-main{
   border: 1px solid $white !important;
-  padding: 4px 16px;
   color: $white;
   
-  @include media-breakpoint-up(lg){
-    padding: 4px 80px;
-  }
-
   &:hover{
     background-color: $white;
     color: $primary;

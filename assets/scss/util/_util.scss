@@ -519,6 +519,7 @@ $utilities: map-merge(
     ),
     "font-size": (
       rfs: true,
+      responsive: true,
       property: font-size,
       class: fs,
       values: $font-sizes
@@ -836,8 +837,10 @@ $utilities: map-merge(
         10: 10px,
         16: 16px,
         20: 20px,
+        24: 24px,
         40: 40px,
         48: 48px,
+        96: 96px,
       )
     ),
     "text-indent": ( // *custom

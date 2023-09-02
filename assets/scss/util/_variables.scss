@@ -454,8 +454,10 @@ $spacers: (
   19: $spacer * 4.75,  // 76px
   20: $spacer * 5,     // 80px
   24: $spacer * 6,     // 96px
+  30: $spacer * 7.5,   // 120px
   32: $spacer * 8,     // 128px
   36: $spacer * 9,     // 144px
+  40: $spacer * 10,    // 160px
 ); // *custom
 // scss-docs-end spacer-variables-maps
 
@@ -579,8 +581,9 @@ $border-widths: (
   2: 2px,
   3: 3px,
   4: 4px,
-  5: 5px
-) !default;
+  5: 5px,
+  12: 12px, // *custom
+);
 $border-style:                solid !default;
 $border-color:                $gray-300 !default;
 $border-color-translucent:    rgba($black, .175) !default;
@@ -700,6 +703,9 @@ $font-sizes: (
   sm: $sm-font-size,
   md: $md-font-size,
   lg: $lg-font-size,
+  24: 1rem * 1.5,
+  48: 1rem * 3,
+  96: 1rem * 6,
 );// *custom
 // scss-docs-end font-sizes
 
@@ -1362,7 +1368,8 @@ $dropdown-dark-header-color:        $gray-500 !default;
 
 // scss-docs-start pagination-variables
 $pagination-padding-y:              .375rem !default;
-$pagination-padding-x:              .75rem !default;
+// $pagination-padding-x:              .75rem !default;
+$pagination-padding-x:              0; // *custom
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
@@ -1370,10 +1377,14 @@ $pagination-padding-x-lg:           1.5rem !default;
 
 $pagination-font-size:              $font-size-base !default;
 
-$pagination-color:                  var(--#{$prefix}link-color) !default;
-$pagination-bg:                     var(--#{$prefix}body-bg) !default;
-$pagination-border-radius:          var(--#{$prefix}border-radius) !default;
-$pagination-border-width:           var(--#{$prefix}border-width) !default;
+// $pagination-color:                  var(--#{$prefix}link-color) !default;
+$pagination-color:                  white; // *custom
+// $pagination-bg:                     var(--#{$prefix}body-bg) !default;
+$pagination-bg:                     none;
+// $pagination-border-radius:          var(--#{$prefix}border-radius) !default;
+$pagination-border-radius:          0; // *custom
+// $pagination-border-width:           var(--#{$prefix}border-width) !default;
+$pagination-border-width:           none; // *custom
 $pagination-margin-start:           calc(#{$pagination-border-width} * -1) !default; // stylelint-disable-line function-disallowed-list
 $pagination-border-color:           var(--#{$prefix}border-color) !default;
 
@@ -1382,12 +1393,17 @@ $pagination-focus-bg:               var(--#{$prefix}secondary-bg) !default;
 $pagination-focus-box-shadow:       $focus-ring-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
-$pagination-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
-$pagination-hover-border-color:     var(--#{$prefix}border-color) !default; // Todo in v6: remove this?
+// $pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
+$pagination-hover-color:            $primary; // *custom
+// $pagination-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
+$pagination-hover-bg:               none; // *custom
+// $pagination-hover-border-color:     var(--#{$prefix}border-color) !default; // Todo in v6: remove this?
+$pagination-hover-border-color:     $primary; // *custom
 
-$pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
+// $pagination-active-color:           $component-active-color !default;
+$pagination-active-color:           white; // *custom
+// $pagination-active-bg:              $component-active-bg !default;
+$pagination-active-bg:              none; // *custom
 $pagination-active-border-color:    $component-active-bg !default;
 
 $pagination-disabled-color:         var(--#{$prefix}secondary-color) !default;
