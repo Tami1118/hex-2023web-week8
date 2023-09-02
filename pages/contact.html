@@ -1,20 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <%- include('./layout/meta'); -%>
+
+<head>
+  <%- include('./layout/meta'); -%>
     <title>ALPHABOX+｜聯絡我們</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
 
     <div class="pt-17">
+      <div class="bg-radial">
+        <div class="container">
+          <div class="py-15 text-start">
+            <h2 class="fs-2 ls-40 ls-lg-48 text-white">聯絡我們</h2>
+          </div>
 
-      <!-- 直接編輯 -->
-      
+          <div class="row mb-20 mb-lg-40">
+            <div class="col-lg-8">
+              <div class="row d-lg-flex justify-content-lg-center">
+                <div class="col-lg-9">
+                  <p class="mb-8 text-justify text-white">
+                    您的意見與需求對我們至關重要！如果您對 ALPHABOX+ 有任何疑問、建議或需求，請隨時填寫以下表單，我們將在 24 小時內回覆您。您的寶貴意見將幫助我們不斷改進產品與服務，為您帶來更優質的體驗。
+                  </p>
+                  <p class="mb-8 text-justify text-white fw-700">
+                    我們期待您的來信與來電，竭誠為您解答。讓我們攜手共創更美好的未來！
+                  </p>
+
+                  <form action="contact.html">
+                    <div class="form-floating mb-2">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="請輸入姓名">
+                      <label for="name">姓名</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input type="email" name="email" class="form-control" id="email" placeholder="請輸入email">
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input type="tel" name="tel" class="form-control" id="tel" placeholder="請輸入聯絡電話">
+                      <label for="tel">聯絡電話</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="comment" style="height: 100px"></textarea>
+                      <label for="comment">Comments</label>
+                    </div>
+                    <a href="#" class="btn btn-primary d-flex justify-content-center align-items-center">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_3211_65" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                          <rect width="24" height="24" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_3211_65)">
+                          <path
+                            d="M12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM11 8V3H13V8H11ZM11 21V16H13V21H11ZM16 13V11H21V13H16ZM3 13V11H8V13H3Z"
+                            fill="white" />
+                        </g>
+                      </svg>
+                      送出
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <ul class="mt-15 mt-lg-0 d-flex flex-column gap-10 text-white">
+                <li>
+                  <p style="color: #ffffff40">客服時間</p>
+                  <p>週一至週五 09:00-18:00</p>
+                </li>
+                <li>
+                  <p style="color: #ffffff40">聯絡地址</p>
+                  <p>高雄市新興區民生一路 56 號</p>
+                </li>
+                <li>
+                  <p style="color: #ffffff40">聯絡方式</p>
+                  <a href="tel:+886-2-12345678">+886-2-12345678</a>
+                  <a href="mailto:customer@alphabox.com">customer@alphabox.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="border-top-lg border-1">
+          <div class="container">
+            <ul class="border-top border-1 border-top-lg-0 py-10 d-flex flex-column flex-lg-row justify-content-lg-end gap-4 gap-lg-18">
+              <li><a href="#">INSTAGRAM</a></li>
+              <li><a href="#">FACEBOOK</a></li>
+              <li><a href="#">TWITTWR</a></li>
+              <li><a href="#">LINKEDIN</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-15 pt-lg-40 pb-lg-30">
+        <div class="container">
+          <h2 class="mb-4 mb-lg-6 fs-2 ls-40 ls-lg-48 fw-700">選擇自己要的角色</h2>
+          <h3 class="mb-6 mb-lg-20 fs-3 fw-700"><span class="text-primary">20K+</span> 使用者喜歡我們的角色</h3>
+        </div>
+      </div>
+      <ul>
+        <li data-aos="fade-up">
+          <a href="#" class="position-relative">
+            <div class="row g-0">
+              <div class="col-lg-9">
+                <picture>
+                  <source srcset="../assets/images/horizontal/diane_horizontal.png" media="(min-width: 992px)">
+                  <img class="w-100" src="../assets/images/mobile/diane_choose.png" alt="diane">
+                </picture>
+              </div>
+            </div>
+            <div class="position-absolute top-0 bottom-0 start-0 end-0">
+              <div class="container h-100 d-flex align-items-center">
+                <p class="fs-2 feature-font-family">
+                  Diane
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li data-aos="fade-up">
+          <a href="#" class="position-relative">
+            <div class="row g-0 flex-row-reverse">
+              <div class="col-lg-9">
+                <picture>
+                  <source srcset="../assets/images/horizontal/felix_horizontal.png" media="(min-width: 992px)">
+                  <img class="w-100" src="../assets/images/mobile/felix_choose.png" alt="diane">
+                </picture>
+              </div>
+            </div>
+            <div class="position-absolute top-0 bottom-0 start-0 end-0">
+              <div class="container h-100 d-flex justify-content-end align-items-center">
+                <p class="fs-2 feature-font-family text-end">
+                  Felix
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li data-aos="fade-up">
+          <a href="#" class="position-relative">
+            <div class="row g-0">
+              <div class="col-lg-9">
+                <picture>
+                  <source srcset="../assets/images/horizontal/karina_horizontal.png" media="(min-width: 992px)">
+                  <img class="w-100" src="../assets/images/mobile/karina_choose.png" alt="diane">
+                </picture>
+              </div>
+            </div>
+            <div class="position-absolute top-0 bottom-0 start-0 end-0">
+              <div class="container h-100 d-flex align-items-center">
+                <p class="fs-2 feature-font-family">
+                  Karina
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li data-aos="fade-up">
+          <a href="#" class="position-relative">
+            <div class="row g-0 flex-row-reverse">
+              <div class="col-lg-9">
+                <picture>
+                  <source srcset="../assets/images/horizontal/vito_horizontal.png" media="(min-width: 992px)">
+                  <img class="w-100" src="../assets/images/mobile/vito_choose.png" alt="diane">
+                </picture>
+              </div>
+            </div>
+            <div class="position-absolute top-0 bottom-0 start-0 end-0">
+              <div class="container h-100 d-flex justify-content-end align-items-center">
+                <p class="fs-2 feature-font-family text-end">
+                  Vito
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
