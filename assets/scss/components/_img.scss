@@ -1,7 +1,14 @@
-.news-img{
+.news-img {
   height: 108px;
 
-  @include media-breakpoint-up(lg){
+  @include media-breakpoint-up(lg) {
     height: 226px;
+  }
+}
+
+.hero-img {
+  transition: ease .8s;
+  &:hover {
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
   }
 }
