@@ -9,6 +9,7 @@ import 'swiper/css/bundle';
 const swiper = new Swiper('.swiper', {
   spaceBetween: 24,
   slidesPerView: 3,
+
   scrollbar: {
     el: ".swiper-scrollbar",
   },
