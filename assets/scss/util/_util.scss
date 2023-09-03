@@ -720,7 +720,7 @@ $utilities: map-merge(
       class: bg,
       values: (
         gradient: var(--#{$prefix}gradient),
-        radial: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, #000 100%),
+        radialToDark: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, #000 100%),
         radialToLight: radial-gradient(50% 50.00% at 50% 50.00%, #000 0%, #28085C 100%),
         linear: linear-gradient(180deg, #7000FF 0%, #11002D 100%), // *custom
       )

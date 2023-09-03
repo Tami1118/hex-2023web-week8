@@ -1,46 +1,30 @@
-.line-create {
-  position: relative;
-
-  &::before,
-  &::after {
-    content: "";
-    height: 8px;
-    bottom: 0;
-    position: absolute;
-    display: block;
-    border-radius: 20px;
-    background-color: $white;
-
-    @include media-breakpoint-up($media-breakpoint-main) {
-      height: 12px;
-    }
-  }
-
-  &::before{
-    width: 8px;
-    left: 0;
-    @include media-breakpoint-up($media-breakpoint-main){
-      width: 12px;
-    }
-  }
-  
-  &::after{
-    width: 124px;
-    left: 24px;
-  }
-}
-
 .card {
-  background-color: rgba(0,0,0, 0.4);
+  background-color: #00000066;
   background-blend-mode: darken;
   background-size: cover;
   background-position: center;
   transition: all 1s;
   &:hover {
-    background-color: rgba(0,0,0, 0.4);
+    background-color: #00000066;
   }
   
   @include media-breakpoint-up(lg){
-    background-color: rgba(0,0,0,1);
+    background-color: #000000;
+  }
+}
+
+.share-bg{
+  color: #ffffff0a;
+  margin-top: -10px;
+  margin-bottom: -20px;
+
+  @include media-breakpoint-up(md){
+    margin-top: -30px;
+    margin-bottom: -100px;
+  }
+
+  @include media-breakpoint-up(xxl){
+    margin-top: -50px;
+    margin-bottom: -150px;
   }
 }
