@@ -1,0 +1,15 @@
+
+.btn-main{
+  border: 1px solid $white;
+  color: $white;
+  
+  &:hover{
+    background-color: $white;
+    color: $primary;
+  }
+  
+  &.active{
+    background-color: $white;
+    color: $black;
+  }
+}

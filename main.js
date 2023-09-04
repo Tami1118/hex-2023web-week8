@@ -6,7 +6,7 @@ import './node_modules/aos/dist/aos.css';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const swiper = new Swiper('.swiper', {
+const shareSwiper = new Swiper('.shareSwiper', {
   spaceBetween: 24,
   slidesPerView: 3,
 
@@ -14,6 +14,17 @@ const swiper = new Swiper('.swiper', {
     el: ".swiper-scrollbar",
   },
   mousewheel: true,
+});
+
+const productSwiper = new Swiper('.productSwiper', {
+  spaceBetween: 0,
+  slidesPerView: 1,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-arrow-pre",
+    prevEl: ".swiper-button-arrow-next",
+  },
 });
 
 

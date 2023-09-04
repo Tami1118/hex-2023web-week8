@@ -2,12 +2,42 @@
   overflow: initial;
 }
 
-/* 滾動條可拖曳區塊的顏色 */
+// 滾動條可拖曳區塊的顏色
 .swiper-scrollbar-drag {
   background-color: #fff;
 }
 
-/* 整個滾動條的背景顏色 */
+// 整個滾動條的背景顏色
 .swiper-scrollbar {
   background-color: #ffffff60;
+}
+
+// navigation style
+.swiper-btn-size{
+  width: 48px;
+  height: 48px;
+  border: 3px solid white;
+  background-color: transparent;
+  
+  &:hover{
+    border: 3px solid $primary;
+
+    &>span{
+      color: $primary;
+    }
+  }
+
+  @include media-breakpoint-up(lg){
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.swiper-btn-arrow{
+  font-size: 24px;
+  color: white;
+
+  @include media-breakpoint-up(lg){
+    font-size: 40px;
+  }
 }

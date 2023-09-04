@@ -7,30 +7,188 @@
 </head>
 
 <body>
-  <%- include('./layout/header'); -%>
+  <header class="position-fixed top-0 start-0 end-0 m-auto z-3">
+    <%- include('./layout/header'); -%>
+  </header>
 
-    <div class="pt-17">
-      <div class="bg-black">
-        <div class="container">
-          <div class="py-4 d-flex justify-content-center gap-2 gap-lg-6">
-            <button class="btn btn-main py-1 px-4 px-lg-20 rounded-5 feature-font-family active">Diane</button>
-            <button class="btn btn-main py-1 px-4 px-lg-20 rounded-5 feature-font-family">Felix</button>
-            <button class="btn btn-main py-1 px-4 px-lg-20 rounded-5 feature-font-family">Karina</button>
-            <button class="btn btn-main py-1 px-4 px-lg-20 rounded-5 feature-font-family">Vito</button>
+  <div class="pt-16">
+
+    <!-- filter -->
+    <div class="bg-black">
+      <div class="container">
+        <div class="py-4 d-flex justify-content-center gap-2 gap-lg-6">
+          <a href="#" class="btn btn-main py-1 px-4 px-lg-20 rounded-5 feature-font-family active">Diane</a>
+          <a href="#" class="btn btn-main py-1 px-4 px-lg-20 rounded-5 feature-font-family">Felix</a>
+          <a href="#" class="btn btn-main py-1 px-4 px-lg-20 rounded-5 feature-font-family">Karina</a>
+          <a href="#" class="btn btn-main py-1 px-4 px-lg-20 rounded-5 feature-font-family">Vito</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- banner -->
+    <div class="row row-cols-1 row-cols-lg-2 g-0 position-relative">
+      <div class="col">
+        <div class="swiper productSwiper position-relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/images/diane_square1.png" alt="diane">
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/diane_square2.png" alt="diane">
+            </div>
+          </div>
+          <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-between align-items-center z-3 p-3 p-lg-4">
+            <button class="swiper-button-arrow-next swiper-btn-size rounded-circle d-flex align-items-center justify-content-center">
+              <span class="material-icons swiper-btn-arrow">arrow_back</span>
+            </button>
+            <button class="swiper-button-arrow-pre swiper-btn-size rounded-circle d-flex align-items-center justify-content-center">
+              <span class="material-icons swiper-btn-arrow">arrow_forward</span>
+            </button>
           </div>
         </div>
       </div>
+      <div class="col">
+        <div class="h-100 bg-black py-4 px-3 p-lg-10 d-flex flex-column justify-content-lg-center">
+          <h2 class="feature-font-family text-white">Diane</h2>
+          <div class="text-white">
+            <p>娛樂型</p>
+            <p>音樂播放/語音互動/遊戲陪伴</p>
 
-      <!-- banner -->
+            <svg class="d-lg-none mt-2" xmlns="http://www.w3.org/2000/svg" width="90" height="24" viewBox="0 0 90 24" fill="none">
+              <mask id="mask0_447_2493" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="90" height="24">
+                <rect width="90" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_447_2493)">
+                <path d="M77 19L80.425 13H2V11H80.425L77 5L88 12L77 19Z" fill="white" />
+              </g>
+            </svg>
+            <svg class="d-none d-lg-block mt-5" xmlns="http://www.w3.org/2000/svg" width="306" height="14" viewBox="0 0 306 14" fill="none">
+              <path d="M283.55 13.8938L290.486 8.24316H0.0500488V6.3596H290.486L283.55 0.708916L305.825 7.30138L283.55 13.8938Z" fill="white" />
+            </svg>
+          </div>
 
+          <div class="d-flex d-xxl-none justify-content-center py-10">
+            <div class="position-relative" style="width: 109px;height: 109px;">
+              <svg class="overflow-visible animate-circle" viewBox="0 0 116 116">
+                <path d="M 0,58 a 58,58 0 1,1 0,1 z" id="circle" fill="none" />
+                <text class="ls-10" fill="white">
+                  <textPath xlink:href="#circle">
+                    ALPHABOX+ALPHABOX+
+                  </textPath>
+                </text>
+              </svg>
+              <a href="#" class="position-absolute top-50 start-50 translate-middle material-icons text-white" style="font-size: 40px;">arrow_downward</a>
+            </div>
+          </div>
 
-      <!--  -->
-      
+          <div class="d-none d-xxl-block position-absolute bottom-0 start-50 translate-middle z-3">
+            <div class="position-relative" style="width: 196px;height: 196px;">
+              <svg class="overflow-visible animate-circle" viewBox="0 0 116 116">
+                <path d="M 0,58 a 58,58 0 1,1 0,1 z" id="circle" fill="none" />
+                <text class="ls-10" fill="white">
+                  <textPath xlink:href="#circle">
+                    ALPHABOX+ALPHABOX+
+                  </textPath>
+                </text>
+              </svg>
+              <a href="#" class="position-absolute top-50 start-50 translate-middle material-icons text-white" style="font-size: 40px;">arrow_downward</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <%- include('./layout/footer'); -%>
+    <!-- feature -->
+    <div class="container pt-16 pb-20">
+      <div class="d-flex justify-content-between align-items-center mb-6 mb-lg-8">
+        <div class="d-flex align-items-center">
+          <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <mask id="mask0_390_209" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+              <rect width="40" height="40" fill="#D9D9D9" />
+            </mask>
+            <g mask="url(#mask0_390_209)">
+              <path d="M17.0833 35V25.0833L8.49992 30.0417L5.58325 25L14.1666 20L5.58325 15.0417L8.49992 10L17.0833 14.9583V5H22.9166V14.9583L31.4999 10L34.4166 15.0417L25.8333 20L34.4166 25L31.4999 30.0417L22.9166 25.0833V35H17.0833Z" fill="black" />
+            </g>
+          </svg>
+          <h3 class="fs-5">學術領導/知識分享/智能問答</h3>
+        </div>
+        <p class="d-none d-lg-block">ALPHABOX+</p>
+      </div>
+      <p class="text-justify mb-8 mb-30" style="max-width: 416px">歡迎來到ALPHABOX+的全新世界！在這裡，我們很榮幸地向您介紹我們的最新力作 - 3D立體投影機器人 Felix！</p>
 
-      <script type="module" src="../main.js"></script>
+      <ul class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 gy-6 gy-xl-24">
+        <li class="col">
+          <h4 class="mb-4 border-bottom border-2 border-black fs-5 fw-700">先進的3D投影技術</h4>
+          <p class="text-justify">Felix 搭載了最新的 3D 投影技術，能夠將虛擬影像清晰地呈現在您的現實空間中，讓您感受身臨其境的體驗！</p>
+        </li>
+        <li class="col">
+          <h4 class="mb-4 border-bottom border-2 border-black fs-5 fw-700">人性化的互動設計</h4>
+          <p class="text-justify">Felix 具有高度智能的語音辨識和回應功能，您可以像跟朋友聊天一樣，與 Felix 進行自然、流暢的對話。</p>
+        </li>
+        <li class="col">
+          <h4 class="mb-4 border-bottom border-2 border-black fs-5 fw-700">豐富的應用場景</h4>
+          <p class="text-justify">無論是家庭娛樂、教育培訓還是商業展示，Felix 都能夠輕鬆滿足您的需求，為您提供更多元的互動體驗。</p>
+        </li>
+        <li class="col">
+          <h4 class="mb-4 border-bottom border-2 border-black fs-5 fw-700">高度自主性</h4>
+          <p class="text-justify">Felix 具有強大的自主學習能力，能夠不斷地學習並優化自己，為您創造更加便捷、貼心的生活方式。</p>
+        </li>
+
+        <li class="col">
+          <h4 class="mb-4 border-bottom border-2 border-black fs-5 fw-700">簡單易用的操作界面</h4>
+          <p class="text-justify">Felix 擁有直觀的操作界面，讓您可以輕鬆地掌握並運用它的各種功能。</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- share -->
+    <div class="bg-radialToDark text-white">
+      <div class="container pt-15 pb-20">
+        <h3 class="mb-4 fs-2 ls-40 ls-lg-48">使用分享</h3>
+        <p class="mb-6 mb-lg-20">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+
+        <ul class="row row-cols-1 row-cols-md-3 gy-6">
+          <li class="col">
+            <div class="bg-ap-600 p-10 d-flex flex-column fw-700" style="height: 350px;">
+              <p class="mb-8">Zona·Taipei</p>
+              <p class="text-justify">自從家裡有了Felix，孩子們的學習興趣提高了不少，他們都喜歡透過Felix的3D立體投影來探索新知識，家庭氛圍變得更加和樂融融！</p>
+              <p class="mt-auto">
+                <span class="rounded-5 d-inline-block bg-white me-4" style="width: 16px; height: 16px;"></span>
+                <span class="rounded-5 d-inline-block bg-white me-4" style="width: 16px; height: 16px;"></span>
+                ALPHABOX+ Felix
+              </p>
+            </div>
+          </li>
+          <li class="col">
+            <div class="bg-white text-black p-10 d-flex flex-column fw-700" style="height: 350px;">
+              <p class="mb-8">Lin·Chiayi</p>
+              <p class="text-justify">自從公司引入 Felix，員工的工作效率提升了很多。Felix 不僅能快速回應我們的需求，還可以協助我們做各種商業展示，真的是企業的好幫手！</p>
+              <p class="mt-auto">
+                <span class="rounded-5 d-inline-block bg-black me-4" style="width: 16px; height: 16px;"></span>
+                <span class="rounded-5 d-inline-block bg-black me-4" style="width: 16px; height: 16px;"></span>
+                ALPHABOX+ Felix
+              </p>
+            </div>
+          </li>
+          <li class="col">
+            <div class="bg-ap-600 p-10 d-flex flex-column fw-700" style="height: 350px;">
+              <p class="mb-8">瑞·Taipei</p>
+              <p class="text-justify">Felix 讓教學變得更生動有趣，學生們在課堂上的參與度和學習效果都有顯著提升。我非常推薦Felix給所有的教育工作者！</p>
+              <p class="mt-auto">
+                <span class="rounded-5 d-inline-block bg-white me-4" style="width: 16px; height: 16px;"></span>
+                <span class="rounded-5 d-inline-block bg-white me-4" style="width: 16px; height: 16px;"></span>
+                ALPHABOX+ Felix
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <%- include('./layout/footer'); -%>
+
+  <script type="module" src="../main.js"></script>
 </body>
 
 </html>

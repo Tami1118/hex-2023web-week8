@@ -7,85 +7,84 @@
 </head>
 
 <body>
-  <%- include('./layout/header'); -%>
+  <header class="position-fixed top-0 start-0 end-0 m-auto z-3">
+    <%- include('./layout/header'); -%>
+  </header>
 
-    <div class="pt-17">
-      <div class="bg-radialToDark">
-        <div class="container pt-30 pt-lg-15 pb-20 pb-lg-40 position-relative">
-          <h1 class="mt-15 mt-lg-40 position-absolute top-0 fs-1 text-white ls-40">登入</h1>
-          <div class="row justify-content-center">
-            <div class="col-lg-4 text-white">
-              <div class="position-relative ol-1 my-16 mx-auto" style="width: 196px;height: 196px;">
-                <svg class="overflow-visible animate-circle" viewBox="0 0 116 116">
-                  <path d="M 0,58 a 58,58 0 1,1 0,1 z" id="circle" fill="none" />
-                  <text class="ls-10" fill="white">
-                    <textPath xlink:href="#circle">
-                      ALPHABOX+ALPHABOX+
-                    </textPath>
-                  </text>
-                </svg>
-                <div class="position-absolute top-50 start-50 translate-middle bg-white rounded-circle" style="width: 20px; height: 20px;"></div>
-              </div>
+  <div class="pt-16">
+    <div class="bg-radialToDark">
+      <div class="container pt-30 pt-lg-15 pb-20 pb-lg-40 position-relative">
+        <h1 class="mt-15 mt-lg-40 position-absolute top-0 fs-1 text-white ls-40">登入</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 text-white">
+            <div class="position-relative my-16 mx-auto" style="width: 196px;height: 196px;">
+              <svg class="overflow-visible animate-circle" viewBox="0 0 116 116">
+                <path d="M 0,58 a 58,58 0 1,1 0,1 z" id="circle" fill="none" />
+                <text class="ls-10" fill="white">
+                  <textPath xlink:href="#circle">
+                    ALPHABOX+ALPHABOX+
+                  </textPath>
+                </text>
+              </svg>
+              <div class="position-absolute top-50 start-50 translate-middle bg-white rounded-circle" style="width: 20px; height: 20px;"></div>
+            </div>
 
+            <div>
+              <h2 class="feature-font-family text-center mb-8" style="font-size: 32px">ALPHABOX+</h2>
               <div>
-                <h2 class="feature-font-family text-center mb-8" style="font-size: 32px">ALPHABOX+</h2>
-
-                <div>
-                  <button class="w-100 btn btn-main rounded-5 d-flex align-items-center justify-content-center py-2 mb-4">
-                    <img class="me-2" style="height: 20px; width: 20px"
-                      src="https://s3-alpha-sig.figma.com/img/738c/e938/834eb0739b5751f1761447d90d1140c3?Expires=1694390400&Signature=XxM3ALiK7P2IyyhPfOnWRnDpQGPFYDP1cvjfcG42i7di7smGsj8~KZDfypNuEaQk7VDl0zvv-dv9f7bCgyMkITihnZypesUGP~wUSPousza4AY4iEJ-W84VvReo4lyFUSupKllHUj2-IR7FeLCRdrZX1I4SPTha40wlcw~jjPn~Rj4PH5tjBGUyIz5BHUU8ZmpVmmdHlhdIO9acGPBVKt0TSYHvi8PYLSqYm0aOKZ2P6wLy-p1bH8RSHv2PaN6QolYs-NXZ6Ze2gipXo9EAJ28DU9x97eG9n6HqqIDMPTs03fYEYqvPPPTWg6NQvCD2pqdzvB~7c453Lj~I37opUhA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                      alt="google">
-                    Continue with Google
-                  </button>
-                  <button class="w-100 btn btn-main rounded-5 d-flex align-items-center justify-content-center py-2">
-                    <img class="me-2" style="height: 20px; width: 20px"
-                      src="https://s3-alpha-sig.figma.com/img/ee5e/3a94/854049ea885b9523ee2a0e736fccbb73?Expires=1694390400&Signature=YQS0k6bZ9YtKg-7A6Ma0Lj~IZvaUWf4OwCv-lGUqIUaJ1ujtC~K2ctYBlbwj9meCIPPab1De2uUH2a27k9hdq3p3~yyxvUXWZ7IFo-bLOoP6ckrhJoDehar6aDPMODdFoKNmVV~VH5Uke1EPHRD0DL0UKw6EImOQWyTGkjElLpp5IN2eICGzi7vbdDk5dbFpVY6Kci9jL~hkYXUkH3AiPNpysvH0~aFGxYVrrR5O1oVfzns3wMdP~OKsF~s6YtUwDIUjD0hXTrBIKQEG~G0rQu0VcZCu80j8lJcg361IzK2z~sKc1sTJRaEdSmc9qfWfTrWyKTtPhrJi6N6OncBOyA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                      alt="apple">
-                    Continue with Apple
-                  </button>
-                </div>
-
-                <div class="my-9 position-relative d-flex justify-content-center">
-                  <span class="or-line d-block">or</span>
-                </div>
-
-                <form action="login.html" class="text-black">
-                  <div class="form-floating mb-2 mb-lg-4">
-                    <input type="email" name="email" class="form-control" id="email" placeholder="請輸入email">
-                    <label for="email">Email</label>
-                  </div>
-                  <div class="form-floating mb-2 mb-lg-4">
-                    <input type="password" name="password" class="form-control" id="password" placeholder="請輸入密碼">
-                    <label for="password">密碼</label>
-                  </div>
-
-                  <a href="#" class="btn btn-primary mb-2 d-flex justify-content-center align-items-center">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <mask id="mask0_3211_65" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="#D9D9D9" />
-                      </mask>
-                      <g mask="url(#mask0_3211_65)">
-                        <path
-                          d="M12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM11 8V3H13V8H11ZM11 21V16H13V21H11ZM16 13V11H21V13H16ZM3 13V11H8V13H3Z"
-                          fill="white" />
-                      </g>
-                    </svg>
-                    立即登入
-                  </a>
-                  <a href="#" class="d-block text-end text-decoration-underline">忘記密碼</a>
-                </form>
+                <button class="w-100 btn btn-main rounded-5 d-flex align-items-center justify-content-center py-2 mb-4">
+                  <img class="me-2" style="height: 20px; width: 20px"
+                    src="https://s3-alpha-sig.figma.com/img/738c/e938/834eb0739b5751f1761447d90d1140c3?Expires=1694390400&Signature=XxM3ALiK7P2IyyhPfOnWRnDpQGPFYDP1cvjfcG42i7di7smGsj8~KZDfypNuEaQk7VDl0zvv-dv9f7bCgyMkITihnZypesUGP~wUSPousza4AY4iEJ-W84VvReo4lyFUSupKllHUj2-IR7FeLCRdrZX1I4SPTha40wlcw~jjPn~Rj4PH5tjBGUyIz5BHUU8ZmpVmmdHlhdIO9acGPBVKt0TSYHvi8PYLSqYm0aOKZ2P6wLy-p1bH8RSHv2PaN6QolYs-NXZ6Ze2gipXo9EAJ28DU9x97eG9n6HqqIDMPTs03fYEYqvPPPTWg6NQvCD2pqdzvB~7c453Lj~I37opUhA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="google">
+                  Continue with Google
+                </button>
+                <button class="w-100 btn btn-main rounded-5 d-flex align-items-center justify-content-center py-2">
+                  <img class="me-2" style="height: 20px; width: 20px"
+                    src="https://s3-alpha-sig.figma.com/img/ee5e/3a94/854049ea885b9523ee2a0e736fccbb73?Expires=1694390400&Signature=YQS0k6bZ9YtKg-7A6Ma0Lj~IZvaUWf4OwCv-lGUqIUaJ1ujtC~K2ctYBlbwj9meCIPPab1De2uUH2a27k9hdq3p3~yyxvUXWZ7IFo-bLOoP6ckrhJoDehar6aDPMODdFoKNmVV~VH5Uke1EPHRD0DL0UKw6EImOQWyTGkjElLpp5IN2eICGzi7vbdDk5dbFpVY6Kci9jL~hkYXUkH3AiPNpysvH0~aFGxYVrrR5O1oVfzns3wMdP~OKsF~s6YtUwDIUjD0hXTrBIKQEG~G0rQu0VcZCu80j8lJcg361IzK2z~sKc1sTJRaEdSmc9qfWfTrWyKTtPhrJi6N6OncBOyA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="apple">
+                  Continue with Apple
+                </button>
               </div>
+
+              <div class="my-9 position-relative d-flex justify-content-center">
+                <span class="or-line d-block">or</span>
+              </div>
+
+              <form action="login.html" class="text-black">
+                <div class="form-floating mb-2 mb-lg-4">
+                  <input type="email" name="email" class="form-control" id="email" placeholder="請輸入email">
+                  <label for="email">Email</label>
+                </div>
+                <div class="form-floating mb-2 mb-lg-4">
+                  <input type="password" name="password" class="form-control" id="password" placeholder="請輸入密碼">
+                  <label for="password">密碼</label>
+                </div>
+
+                <a href="#" class="btn btn-primary mb-2 d-flex justify-content-center align-items-center">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_3211_65" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_3211_65)">
+                      <path
+                        d="M12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM11 8V3H13V8H11ZM11 21V16H13V21H11ZM16 13V11H21V13H16ZM3 13V11H8V13H3Z"
+                        fill="white" />
+                    </g>
+                  </svg>
+                  立即登入
+                </a>
+                <a href="#" class="d-block text-end text-decoration-underline">忘記密碼</a>
+              </form>
             </div>
           </div>
-
         </div>
       </div>
-
     </div>
+  </div>
 
-    <%- include('./layout/footer'); -%>
+  <%- include('./layout/footer'); -%>
 
-      <script type="module" src="../main.js"></script>
+  <script type="module" src="../main.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,3 @@
-.ol-1{
-  outline: 1px solid red;
-}
-
 .or-line::before{
   content: "";
   position: absolute;
@@ -28,17 +24,3 @@
   background-color: gray;
 }
 
-.btn-main{
-  border: 1px solid $white !important;
-  color: $white;
-  
-  &:hover{
-    background-color: $white;
-    color: $primary;
-  }
-  
-  &.active{
-    background-color: $white;
-    color: $black;
-  }
-}

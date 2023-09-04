@@ -7,15 +7,17 @@
 </head>
 
 <body>
-  <%- include('./layout/header'); -%>
+  <header class="position-fixed top-0 start-0 end-0 m-auto border-bottom border-1 z-3">
+    <%- include('./layout/header'); -%>
+  </header>
 
-    <div class="pt-17">
-      <%- include('./layout/index-banner'); -%>
-      <%- include('./layout/index-new'); -%>
-      <%- include('./layout/index-share'); -%>
-      <%- include('./layout/index-contact'); -%>
-      <%- include('./layout/index-intro'); -%>
-    </div>
+  <div class="pt-16">
+    <%- include('./layout/index-banner'); -%>
+    <%- include('./layout/index-new'); -%>
+    <%- include('./layout/index-share'); -%>
+    <%- include('./layout/index-contact'); -%>
+    <%- include('./layout/index-intro'); -%>
+  </div>
 
   <%- include('./layout/footer'); -%>
 

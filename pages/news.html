@@ -7,214 +7,215 @@
 </head>
 
 <body>
-  <%- include('./layout/header'); -%>
+  <header class="position-fixed top-0 start-0 end-0 m-auto z-3">
+    <%- include('./layout/header'); -%>
+  </header>
 
-    <div class="pt-17">
+  <div class="pt-16">
 
-      <div class="bg-radialToDark">
-        <div class="container">
-          <div class="py-15 text-start text-lg-center">
-            <h2 class="fs-2 ls-40 ls-lg-48 text-white">最新消息</h2>
-          </div>
-          <ul class="d-flex flex-column gap-10">
-            <li class="row gy-4 justify-content-lg-center position-relative">
-              <div class="col-2 col-lg-1 d-flex align-items-center">
-                <div class="fs-md fw-300 saira-font-family text-white lh-1">
-                  1
+    <div class="bg-radialToDark">
+      <div class="container">
+        <div class="py-15 text-start text-lg-center">
+          <h2 class="fs-2 ls-40 ls-lg-48 text-white">最新消息</h2>
+        </div>
+        <ul class="d-flex flex-column gap-10">
+          <li data-aos="fade-up" class="row gy-4 justify-content-lg-center position-relative">
+            <div class="col-2 col-lg-1 d-flex align-items-center">
+              <div class="fs-md fw-300 saira-font-family text-white lh-1">
+                1
+              </div>
+            </div>
+            <div class="col-10 col-lg-2">
+              <img class="news-img object-fit-cover w-100" src="../assets/images/news/news_in.png" alt="產品限時公告">
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="h-100 border-top border-bottom border-1 py-6 px-4 py-lg-10 text-white">
+                <div class="mb-2 d-flex align-items-center">
+                  <svg class="me-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_233_4964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_233_4964)">
+                      <path d="M10.25 21V15.05L5.09998 18.025L3.34998 15L8.49998 12L3.34998 9.025L5.09998 6L10.25 8.975V3H13.75V8.975L18.9 6L20.65 9.025L15.5 12L20.65 15L18.9 18.025L13.75 15.05V21H10.25Z" fill="white" />
+                    </g>
+                  </svg>
+                  <p class="ls-16">2023.06.30</p>
                 </div>
+                <h3 class="mb-3 fs-5 ls-20">產品限時公告</h3>
+                <p class="mb-3 mb-lg-0 text-justify">榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！</p>
               </div>
-              <div class="col-10 col-lg-2">
-                <img class="news-img object-fit-cover w-100" src="../assets/images/news/news_in.png" alt="產品限時公告">
+            </div>
+            <a href="news-detail.html" class="col-12 col-lg-1 d-lg-flex text-end text-lg-start stretched-link">
+              <svg class="mt-lg-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_456_358" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                  <rect width="40" height="40" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_456_358)">
+                  <path d="M20 32.6921L18.218 30.9357L27.9039 21.2498H7.30774V18.7499H27.9039L18.218 9.06399L20 7.30762L32.6922 19.9999L20 32.6921Z" fill="white" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li data-aos="fade-up" class="row gy-4 justify-content-lg-center position-relative">
+            <div class="col-2 col-lg-1 d-flex align-items-center">
+              <div class="fs-md fw-300 saira-font-family text-white lh-1">
+                2
               </div>
-              <div class="col-12 col-lg-6">
-                <div class="h-100 border-top border-bottom border-1 py-6 px-4 py-lg-10 text-white">
-                  <div class="mb-2 d-flex align-items-center">
-                    <svg class="me-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <mask id="mask0_233_4964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="#D9D9D9" />
-                      </mask>
-                      <g mask="url(#mask0_233_4964)">
-                        <path d="M10.25 21V15.05L5.09998 18.025L3.34998 15L8.49998 12L3.34998 9.025L5.09998 6L10.25 8.975V3H13.75V8.975L18.9 6L20.65 9.025L15.5 12L20.65 15L18.9 18.025L13.75 15.05V21H10.25Z" fill="white" />
-                      </g>
-                    </svg>
-                    <p class="ls-16">2023.06.30</p>
-                  </div>
-                  <h3 class="mb-3 fs-5 ls-20">產品限時公告</h3>
-                  <p class="mb-3 mb-lg-0 text-justify">榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！</p>
+            </div>
+            <div class="col-10 col-lg-2">
+              <img class="news-img object-fit-cover w-100" src="../assets/images/news/thanks.png" alt="限時優惠活動">
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="h-100 border-top border-bottom border-1 py-6 px-4 py-lg-10 text-white">
+                <div class="mb-2 d-flex align-items-center">
+                  <svg class="me-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_233_4964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_233_4964)">
+                      <path d="M10.25 21V15.05L5.09998 18.025L3.34998 15L8.49998 12L3.34998 9.025L5.09998 6L10.25 8.975V3H13.75V8.975L18.9 6L20.65 9.025L15.5 12L20.65 15L18.9 18.025L13.75 15.05V21H10.25Z" fill="white" />
+                    </g>
+                  </svg>
+                  <p class="ls-16">2023.06.30</p>
                 </div>
+                <h3 class="mb-3 fs-5 ls-20">限時優惠活動</h3>
+                <p class="mb-3 mb-lg-0 text-justify">為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。購買 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！本月將舉辦一場限時優惠活動。購買 ALPHABOX+ 的顧客，皆可享受九折優惠。</p>
               </div>
-              <a href="news-detail.html" class="col-12 col-lg-1 d-lg-flex text-end text-lg-start stretched-link">
-                <svg class="mt-lg-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <mask id="mask0_456_358" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
-                  <rect width="40" height="40" fill="#D9D9D9"/>
-                  </mask>
-                  <g mask="url(#mask0_456_358)">
-                  <path d="M20 32.6921L18.218 30.9357L27.9039 21.2498H7.30774V18.7499H27.9039L18.218 9.06399L20 7.30762L32.6922 19.9999L20 32.6921Z" fill="white"/>
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li class="row gy-4 justify-content-lg-center position-relative">
-              <div class="col-2 col-lg-1 d-flex align-items-center">
-                <div class="fs-md fw-300 saira-font-family text-white lh-1">
-                  2
+            </div>
+            <a href="news-detail.html" class="col-12 col-lg-1 d-lg-flex text-end text-lg-start stretched-link">
+              <svg class="mt-lg-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_456_358" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                  <rect width="40" height="40" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_456_358)">
+                  <path d="M20 32.6921L18.218 30.9357L27.9039 21.2498H7.30774V18.7499H27.9039L18.218 9.06399L20 7.30762L32.6922 19.9999L20 32.6921Z" fill="white" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li data-aos="fade-up" class="row gy-4 justify-content-lg-center position-relative">
+            <div class="col-2 col-lg-1 d-flex align-items-center">
+              <div class="fs-md fw-300 saira-font-family text-white lh-1">
+                3
+              </div>
+            </div>
+            <div class="col-10 col-lg-2">
+              <img class="news-img object-fit-cover w-100" src="../assets/images/news/exhibition.png" alt="參加科技展覽">
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="h-100 border-top border-bottom border-1 py-6 px-4 py-lg-10 text-white">
+                <div class="mb-2 d-flex align-items-center">
+                  <svg class="me-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_233_4964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_233_4964)">
+                      <path d="M10.25 21V15.05L5.09998 18.025L3.34998 15L8.49998 12L3.34998 9.025L5.09998 6L10.25 8.975V3H13.75V8.975L18.9 6L20.65 9.025L15.5 12L20.65 15L18.9 18.025L13.75 15.05V21H10.25Z" fill="white" />
+                    </g>
+                  </svg>
+                  <p class="ls-16">2023.06.30</p>
                 </div>
+                <h3 class="mb-3 fs-5 ls-20">參加科技展覽</h3>
+                <p class="mb-3 mb-lg-0 text-justify">本公司將參與今年的台灣國際科技展覽，屆時將展示最新款的3D立體陪伴機器人。誠摯邀請您親臨現場，親自體驗這款創新的產品！屆時將展示最新款的3D立體陪伴機器人。誠摯邀請您親臨現場，親自體驗這款創新的產品！</p>
               </div>
-              <div class="col-10 col-lg-2">
-                <img class="news-img object-fit-cover w-100" src="../assets/images/news/thanks.png" alt="限時優惠活動">
+            </div>
+            <a href="news-detail.html" class="col-12 col-lg-1 d-lg-flex text-end text-lg-start stretched-link">
+              <svg class="mt-lg-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_456_358" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                  <rect width="40" height="40" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_456_358)">
+                  <path d="M20 32.6921L18.218 30.9357L27.9039 21.2498H7.30774V18.7499H27.9039L18.218 9.06399L20 7.30762L32.6922 19.9999L20 32.6921Z" fill="white" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li data-aos="fade-up" class="row gy-4 justify-content-lg-center position-relative">
+            <div class="col-2 col-lg-1 d-flex align-items-center">
+              <div class="fs-md fw-300 saira-font-family text-white lh-1">
+                4
               </div>
-              <div class="col-12 col-lg-6">
-                <div class="h-100 border-top border-bottom border-1 py-6 px-4 py-lg-10 text-white">
-                  <div class="mb-2 d-flex align-items-center">
-                    <svg class="me-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <mask id="mask0_233_4964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="#D9D9D9" />
-                      </mask>
-                      <g mask="url(#mask0_233_4964)">
-                        <path d="M10.25 21V15.05L5.09998 18.025L3.34998 15L8.49998 12L3.34998 9.025L5.09998 6L10.25 8.975V3H13.75V8.975L18.9 6L20.65 9.025L15.5 12L20.65 15L18.9 18.025L13.75 15.05V21H10.25Z" fill="white" />
-                      </g>
-                    </svg>
-                    <p class="ls-16">2023.06.30</p>
-                  </div>
-                  <h3 class="mb-3 fs-5 ls-20">限時優惠活動</h3>
-                  <p class="mb-3 mb-lg-0 text-justify">為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。購買 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！本月將舉辦一場限時優惠活動。購買 ALPHABOX+ 的顧客，皆可享受九折優惠。</p>
+            </div>
+            <div class="col-10 col-lg-2">
+              <img class="news-img object-fit-cover w-100" src="../assets/images/news/update.png" alt="新功能上線">
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="h-100 border-top border-bottom border-1 py-6 px-4 py-lg-10 text-white">
+                <div class="mb-2 d-flex align-items-center">
+                  <svg class="me-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_233_4964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_233_4964)">
+                      <path d="M10.25 21V15.05L5.09998 18.025L3.34998 15L8.49998 12L3.34998 9.025L5.09998 6L10.25 8.975V3H13.75V8.975L18.9 6L20.65 9.025L15.5 12L20.65 15L18.9 18.025L13.75 15.05V21H10.25Z" fill="white" />
+                    </g>
+                  </svg>
+                  <p class="ls-16">2023.06.30</p>
                 </div>
+                <h3 class="mb-3 fs-5 ls-20">新功能上線</h3>
+                <p class="mb-3 mb-lg-0 text-justify">為使您的3D立體陪伴機器人更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。近期，我們新推出智慧家居控制功能。</p>
               </div>
-              <a href="news-detail.html" class="col-12 col-lg-1 d-lg-flex text-end text-lg-start stretched-link">
-                <svg class="mt-lg-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <mask id="mask0_456_358" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
-                  <rect width="40" height="40" fill="#D9D9D9"/>
-                  </mask>
-                  <g mask="url(#mask0_456_358)">
-                  <path d="M20 32.6921L18.218 30.9357L27.9039 21.2498H7.30774V18.7499H27.9039L18.218 9.06399L20 7.30762L32.6922 19.9999L20 32.6921Z" fill="white"/>
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li class="row gy-4 justify-content-lg-center position-relative">
-              <div class="col-2 col-lg-1 d-flex align-items-center">
-                <div class="fs-md fw-300 saira-font-family text-white lh-1">
-                  3
+            </div>
+            <a href="news-detail.html" class="col-12 col-lg-1 d-lg-flex text-end text-lg-start stretched-link">
+              <svg class="mt-lg-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_456_358" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                  <rect width="40" height="40" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_456_358)">
+                  <path d="M20 32.6921L18.218 30.9357L27.9039 21.2498H7.30774V18.7499H27.9039L18.218 9.06399L20 7.30762L32.6922 19.9999L20 32.6921Z" fill="white" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li data-aos="fade-up" class="row gy-4 justify-content-lg-center position-relative">
+            <div class="col-2 col-lg-1 d-flex align-items-center">
+              <div class="fs-md fw-300 saira-font-family text-white lh-1">
+                5
+              </div>
+            </div>
+            <div class="col-10 col-lg-2">
+              <img class="news-img object-fit-cover w-100" src="../assets/images/news/interview.png" alt="用戶見面會">
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="h-100 border-top border-bottom border-1 py-6 px-4 py-lg-10 text-white">
+                <div class="mb-2 d-flex align-items-center">
+                  <svg class="me-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_233_4964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_233_4964)">
+                      <path d="M10.25 21V15.05L5.09998 18.025L3.34998 15L8.49998 12L3.34998 9.025L5.09998 6L10.25 8.975V3H13.75V8.975L18.9 6L20.65 9.025L15.5 12L20.65 15L18.9 18.025L13.75 15.05V21H10.25Z" fill="white" />
+                    </g>
+                  </svg>
+                  <p class="ls-16">2023.06.30</p>
                 </div>
+                <h3 class="mb-3 fs-5 ls-20">用戶見面會</h3>
+                <p class="mb-3 mb-lg-0 text-justify">為進一步滿足客戶需求，並優化產品性能，我們將舉行用戶見面會。屆時，我們將向您展示我們的研發成果，同時聆聽您的意見和建議，讓我們共同打造更完美的產品！同時聆聽您的意見和建議！</p>
               </div>
-              <div class="col-10 col-lg-2">
-                <img class="news-img object-fit-cover w-100" src="../assets/images/news/exhibition.png" alt="參加科技展覽">
-              </div>
-              <div class="col-12 col-lg-6">
-                <div class="h-100 border-top border-bottom border-1 py-6 px-4 py-lg-10 text-white">
-                  <div class="mb-2 d-flex align-items-center">
-                    <svg class="me-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <mask id="mask0_233_4964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="#D9D9D9" />
-                      </mask>
-                      <g mask="url(#mask0_233_4964)">
-                        <path d="M10.25 21V15.05L5.09998 18.025L3.34998 15L8.49998 12L3.34998 9.025L5.09998 6L10.25 8.975V3H13.75V8.975L18.9 6L20.65 9.025L15.5 12L20.65 15L18.9 18.025L13.75 15.05V21H10.25Z" fill="white" />
-                      </g>
-                    </svg>
-                    <p class="ls-16">2023.06.30</p>
-                  </div>
-                  <h3 class="mb-3 fs-5 ls-20">參加科技展覽</h3>
-                  <p class="mb-3 mb-lg-0 text-justify">本公司將參與今年的台灣國際科技展覽，屆時將展示最新款的3D立體陪伴機器人。誠摯邀請您親臨現場，親自體驗這款創新的產品！屆時將展示最新款的3D立體陪伴機器人。誠摯邀請您親臨現場，親自體驗這款創新的產品！</p>
-                </div>
-              </div>
-              <a href="news-detail.html" class="col-12 col-lg-1 d-lg-flex text-end text-lg-start stretched-link">
-                <svg class="mt-lg-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <mask id="mask0_456_358" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
-                  <rect width="40" height="40" fill="#D9D9D9"/>
-                  </mask>
-                  <g mask="url(#mask0_456_358)">
-                  <path d="M20 32.6921L18.218 30.9357L27.9039 21.2498H7.30774V18.7499H27.9039L18.218 9.06399L20 7.30762L32.6922 19.9999L20 32.6921Z" fill="white"/>
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li class="row gy-4 justify-content-lg-center position-relative">
-              <div class="col-2 col-lg-1 d-flex align-items-center">
-                <div class="fs-md fw-300 saira-font-family text-white lh-1">
-                  4
-                </div>
-              </div>
-              <div class="col-10 col-lg-2">
-                <img class="news-img object-fit-cover w-100" src="../assets/images/news/update.png" alt="新功能上線">
-              </div>
-              <div class="col-12 col-lg-6">
-                <div class="h-100 border-top border-bottom border-1 py-6 px-4 py-lg-10 text-white">
-                  <div class="mb-2 d-flex align-items-center">
-                    <svg class="me-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <mask id="mask0_233_4964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="#D9D9D9" />
-                      </mask>
-                      <g mask="url(#mask0_233_4964)">
-                        <path d="M10.25 21V15.05L5.09998 18.025L3.34998 15L8.49998 12L3.34998 9.025L5.09998 6L10.25 8.975V3H13.75V8.975L18.9 6L20.65 9.025L15.5 12L20.65 15L18.9 18.025L13.75 15.05V21H10.25Z" fill="white" />
-                      </g>
-                    </svg>
-                    <p class="ls-16">2023.06.30</p>
-                  </div>
-                  <h3 class="mb-3 fs-5 ls-20">新功能上線</h3>
-                  <p class="mb-3 mb-lg-0 text-justify">為使您的3D立體陪伴機器人更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。近期，我們新推出智慧家居控制功能。</p>
-                </div>
-              </div>
-              <a href="news-detail.html" class="col-12 col-lg-1 d-lg-flex text-end text-lg-start stretched-link">
-                <svg class="mt-lg-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <mask id="mask0_456_358" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
-                  <rect width="40" height="40" fill="#D9D9D9"/>
-                  </mask>
-                  <g mask="url(#mask0_456_358)">
-                  <path d="M20 32.6921L18.218 30.9357L27.9039 21.2498H7.30774V18.7499H27.9039L18.218 9.06399L20 7.30762L32.6922 19.9999L20 32.6921Z" fill="white"/>
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li class="row gy-4 justify-content-lg-center position-relative">
-              <div class="col-2 col-lg-1 d-flex align-items-center">
-                <div class="fs-md fw-300 saira-font-family text-white lh-1">
-                  5
-                </div>
-              </div>
-              <div class="col-10 col-lg-2">
-                <img class="news-img object-fit-cover w-100" src="../assets/images/news/interview.png" alt="用戶見面會">
-              </div>
-              <div class="col-12 col-lg-6">
-                <div class="h-100 border-top border-bottom border-1 py-6 px-4 py-lg-10 text-white">
-                  <div class="mb-2 d-flex align-items-center">
-                    <svg class="me-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <mask id="mask0_233_4964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="#D9D9D9" />
-                      </mask>
-                      <g mask="url(#mask0_233_4964)">
-                        <path d="M10.25 21V15.05L5.09998 18.025L3.34998 15L8.49998 12L3.34998 9.025L5.09998 6L10.25 8.975V3H13.75V8.975L18.9 6L20.65 9.025L15.5 12L20.65 15L18.9 18.025L13.75 15.05V21H10.25Z" fill="white" />
-                      </g>
-                    </svg>
-                    <p class="ls-16">2023.06.30</p>
-                  </div>
-                  <h3 class="mb-3 fs-5 ls-20">用戶見面會</h3>
-                  <p class="mb-3 mb-lg-0 text-justify">為進一步滿足客戶需求，並優化產品性能，我們將舉行用戶見面會。屆時，我們將向您展示我們的研發成果，同時聆聽您的意見和建議，讓我們共同打造更完美的產品！同時聆聽您的意見和建議！</p>
-                </div>
-              </div>
-              <a href="news-detail.html" class="col-12 col-lg-1 d-lg-flex text-end text-lg-start stretched-link">
-                <svg class="mt-lg-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <mask id="mask0_456_358" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
-                  <rect width="40" height="40" fill="#D9D9D9"/>
-                  </mask>
-                  <g mask="url(#mask0_456_358)">
-                  <path d="M20 32.6921L18.218 30.9357L27.9039 21.2498H7.30774V18.7499H27.9039L18.218 9.06399L20 7.30762L32.6922 19.9999L20 32.6921Z" fill="white"/>
-                  </g>
-                </svg>
-              </a>
-            </li>
-          </ul>
+            </div>
+            <a href="news-detail.html" class="col-12 col-lg-1 d-lg-flex text-end text-lg-start stretched-link">
+              <svg class="mt-lg-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_456_358" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                  <rect width="40" height="40" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_456_358)">
+                  <path d="M20 32.6921L18.218 30.9357L27.9039 21.2498H7.30774V18.7499H27.9039L18.218 9.06399L20 7.30762L32.6922 19.9999L20 32.6921Z" fill="white" />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
 
-          <div class="pt-10 pb-20 d-flex justify-content-center">
-            <%- include('./layout/pagination'); -%>
-          </div>
+        <div class="pt-10 pb-20 d-flex justify-content-center">
+          <%- include('./layout/pagination'); -%>
         </div>
       </div>
-
     </div>
+  </div>
 
-    <%- include('./layout/footer'); -%>
+  <%- include('./layout/footer'); -%>
 
-      <script type="module" src="../main.js"></script>
+  <script type="module" src="../main.js"></script>
 </body>
 
 </html>
