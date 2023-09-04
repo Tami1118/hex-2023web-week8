@@ -24,3 +24,13 @@
   background-color: gray;
 }
 
+.text-mark::after{
+  content: "";
+  height: 12px;
+  background-color: $secondary;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
